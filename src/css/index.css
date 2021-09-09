@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    color: #ffff;
+    background-color: rgb(116, 116, 116);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header{
+    background-image: url(../img/Imagem\ 74.png);
+    background-size: cover;
+    width: 100%;
+    height: 944px;
+
+}
+
+header nav{
+    display: flex;
+    height: 148px;
+}
+
+.navbar{
+    align-items: center;
+    justify-content: space-around;
+    font-size: 11.5px;
+    background: #000000;
+    background: linear-gradient(180deg, #000000 0%, #00000081 50%);
+}
+
+.navbar ul{
+    display: flex;
+    align-content: center;
+}
+
+.navbar li{
+    list-style-type: none;
+    align-content: center;
+    padding: 13px;
+}
+
+.icons li{
+    padding: 11,5px;
+}
+
+.links{
+    padding: 0;
+}
+
+.links li{
+    padding: 11px;
+    text-decoration: none;
+}
+
+.links li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#logo-nav{
+    width: 180px;
+}
+
+.ouca-agora{
+    border: solid rgb(162, 0, 255);
+}
+
+.ouca-agora p{
+    font-size: 45px;
+    font-family: 'Fira Sans';
+    font-weight: 900;
+}
+
+.ouca-agora>div{
+    display: flex;
+    align-items: center;
+}
+
+.ouca-agora>div>div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.proximos-shows{
+    background-image: url(../img/Imagem\ 80.png);
+    background-size: cover;
+    background-color: #ffffff;
+    color: #000000;
+    width: 100%;
+    height: 944px;
+}
