@@ -21,7 +21,7 @@ button{
 
 body{
     color: #ffff;
-    background-color: rgb(116, 116, 116);
+    background-color: #292829;
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -221,6 +221,7 @@ header{
     flex-direction: column;
     justify-content: center;
     margin: 0px 0px 102px 48px;
+    margin-right: 140px;
 }
 
 .player-flamingo img{
