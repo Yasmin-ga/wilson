@@ -1,6 +1,22 @@
+/*  GERAL  */
+
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    max-width: 100%;
+    list-style: none;
+}
+
+p{
+    font-size: 56px;
+}
+
+button{
+    font-size: 16px;
+    text-transform: none;
+    -webkit-appearance: button;
+    border-style: none;
 }
 
 body{
@@ -9,86 +25,330 @@ body{
     font-family: 'Fira Sans', sans-serif;
 }
 
+/*  header e barra de navegação  */
+
 header{
-    background-image: url(../img/Imagem\ 74.png);
-    background-size: cover;
-    width: 100%;
-    height: 944px;
-
-}
-
-header nav{
-    display: flex;
-    height: 148px;
+    background: #000000;
+    background: linear-gradient(180deg, #000000 -30%, #00000000 60%);
 }
 
 .navbar{
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    font-size: 11.5px;
-    background: #000000;
-    background: linear-gradient(180deg, #000000 0%, #00000081 50%);
+    justify-content: space-evenly;
+    height: 148px;
 }
 
 .navbar ul{
     display: flex;
-    align-content: center;
-}
-
-.navbar li{
-    list-style-type: none;
-    align-content: center;
-    padding: 13px;
 }
 
 .icons li{
-    padding: 11,5px;
-}
-
-.links{
-    padding: 0;
+    padding: 20px;
 }
 
 .links li{
-    padding: 11px;
-    text-decoration: none;
+    padding: 11.5px;
 }
 
 .links li a{
     text-decoration: none;
-    color: #ffffff;
+    color: #ffff;
 }
 
-#logo-nav{
-    width: 180px;
-}
+/* banner 01 - OUÇA AGORA */
 
 .ouca-agora{
-    border: solid rgb(162, 0, 255);
+    background-image: url(../img/imagem-74-opacidade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    height: 944px;
 }
 
 .ouca-agora p{
-    font-size: 45px;
-    font-family: 'Fira Sans';
     font-weight: 900;
+    width: 347px;
+    height: 64px;
 }
 
-.ouca-agora>div{
+.frame-ouca-agora{
+    width: 1680px;
+    height: 944px;
+    max-width: 100%;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.ouca-agora>div>div{
+.frame-ouca-agora-itens{
     display: flex;
     flex-direction: column;
-
+    padding-left: 35px;
+    padding-top: 25px;
 }
+
+.frame-ouca-agora-btns{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.frame-ouca-agora-btns button{
+    display: flex;
+    width: 160px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.frame-ouca-agora-btns span{
+    margin-right: 10px;
+}
+
+.frame-ouca-agora-btns a{
+    text-decoration: none;
+}
+
+.frame-ouca-agora-btns img{
+    margin: 10px;
+}
+
+.container-ouca-agora{
+    display: flex;
+    padding: 0px 130px 100px 0px;
+}
+
+/* banner 02 - PRÓXIMOS SHOWS */
 
 .proximos-shows{
     background-image: url(../img/Imagem\ 80.png);
     background-size: cover;
-    background-color: #ffffff;
-    color: #000000;
-    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FAFAFA;
+    color: #F26B35;
+}
+
+.proximos-shows-frame{
+    width: 1680px;
     height: 944px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.proximos-shows-gaita{
+    padding: 39px 0px 0px 131px;
+}
+
+.proximos-shows-datas {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 57px 0px 137px 258px ;
+}
+
+.proximos-shows-datas h1{
+    font-size: 40px;
+    font-weight: 200;
+    text-decoration: none;
+    color: #555234;
+    padding: 0px 0px 6px 0px;
+}
+
+.proximos-shows-datas h2{
+    color: #D22B49;
+    font-weight: 900;
+    font-size: 60px; 
+    padding: 0px 0px 20px 0px;
+}
+
+.proximos-shows-datas h3{
+    font-size: 36px;
+}
+
+.proximos-shows-datas button{
+    font-size: 16px;
+    color: #ffff;
+    width: 338px;
+    height: 65px;
+    background-color: #000000;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top: 40px;
+}
+
+.proximos-shows-datas button a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.proximos-shows-flamingo{
+    margin: 0px 95px 10px 0px;
+}
+
+.proximos-shows-container-2 {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* banner 03 - PLAYER */
+
+.player{
+    background-color: #292829;
+}
+
+.player-frame{
+    width: 1680px;
+    height: 944px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.player-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 81px 140px 77px 48px;
+}
+
+.player-flamingo img{
+    margin-top: 161px;
+}
+
+.player-maior p{
+    font-weight: 900;
+    margin: 102px 0px 39px 140px;
+    }
+
+.players-menores {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0px 18px 0px;
+    }
+
+.player-container a button{
+    width: 810px;
+    height: 65px;
+    font-size: 16px;
+    color: #ffff;
+    background-color: #C29B31;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* banner 04 - CONTATO */
+
+.contato{
+    background-image: url(../img/Imagem\ 79.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.contato-frame p{
+    margin: 102px 0px 39px 140px;
+}
+
+.contato-frame{
+    width: 1680px;
+    height: 944px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contato-form form{
+    display: flex;
+    flex-direction: column;
+    height: 724px;
+    width: 574px;
+    margin: 0px 0px 0px 140px;
+}
+
+.contato-form form button{
+    margin-top: 71px;
+    width: 574px;
+    height: 65px;
+    font-size: 16px;
+    color: #ffff;
+    background-color: #282829;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    background-color: #292829;
+    height: 71px;
+    border: springgreen solid 2px;
+}
+
+footer div{
+    border: rgb(183, 0, 255) solid;
+    flex-direction: row;
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tel{
+    width: 131px;
+    height: 17px;
+}
+
+.email{
+    width: 256px;
+    height: 17px;
+}
+
+.tel a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.email a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footer-gaita{
+    width: 209px;
+    height: 129px;
+}
+
+.copyrigth{
+    width: 189px;
+    height: 32px;
+}
+
+.copyrigth p{
+    font-size: 14px;
+    color: #ffff;
+}
+
+.vinci{
+    width: 195.2px;
+    height: 32.83px;
+}
+
+.vinci p{
+    font-size: 14px;
+    color: #ffff;
 }
