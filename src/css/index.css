@@ -220,7 +220,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 81px 140px 77px 48px;
+    margin: 0px 0px 102px 48px;
 }
 
 .player-flamingo img{
@@ -291,64 +291,87 @@ header{
 
 /* FOOTER */
 
-footer{
-    display: flex;
+.footer-frame{
     background-color: #292829;
     height: 71px;
     border: springgreen solid 2px;
-}
-
-footer div{
-    border: rgb(183, 0, 255) solid;
-    flex-direction: row;
     width: 1680px;
     max-width: 100%;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    border: rgb(255, 0, 0) solid 2px;
+    height: 71px;
 }
 
 .tel{
-    width: 131px;
-    height: 17px;
-}
-
-.email{
-    width: 256px;
+    width: 121px;
     height: 17px;
 }
 
 .tel a{
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     color: #ffff;
+}
+
+.tel img{
+    margin: 0px 6px;
+    }
+
+.email{
+    width: 229px;
+    height: 17px;
+}
+
+.email img{
+    margin: 0px 6px;
 }
 
 .email a{
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     color: #ffff;
 }
 
-.footer-gaita{
-    width: 209px;
-    height: 129px;
-}
-
-.copyrigth{
-    width: 189px;
+.copyright{
+    width: 195px;
     height: 32px;
 }
 
-.copyrigth p{
-    font-size: 14px;
+.copyright p{
+    font-size: 12px;
     color: #ffff;
 }
 
 .vinci{
-    width: 195.2px;
+    width: 196px;
     height: 32.83px;
+    display: flex;
+    align-items: center;
 }
 
 .vinci p{
-    font-size: 14px;
+    font-size: 12px;
     color: #ffff;
+}
+
+.vinci img{
+    margin: 0px 0px 0px 16px;
+}
+
+.footer-contatos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-gaita{
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
 }
