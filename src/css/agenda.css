@@ -8,19 +8,151 @@
     list-style: none;
 }
 
-p{
-    font-size: 56px;
-}
 
 button{
     font-size: 16px;
     text-transform: none;
     -webkit-appearance: button;
     border-style: none;
+    display: flex;
+    width: 338px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #D22B49;
+    color: #FFFFFF;
 }
 
 body{
-    color: #ffff;
-    background-color: rgb(116, 116, 116);
+    color: #000000;
     font-family: 'Fira Sans', sans-serif;
+    background-image: url(../img/Imagem\ 97.png);
+    background-color: #FAFAFA;
+}
+
+/* FONTES */
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 80px;
+    font-weight: 900;
+    color: #D22B49;
+}
+
+
+h3{
+    font-size: 50px;
+    color: #F26B35;
+    font-weight: 900;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: 900;
+    color: #292829;
+}
+
+.location-1{
+    font-size: 16px;
+    font-weight: 900;
+    color: #292829;
+    margin-bottom: 5px;
+}
+
+.location-2{
+    font-size: 16px;
+    font-weight: 300;
+    color: #292829;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #555234;
+}
+/* section - AGENDA */
+
+.agenda-frame{
+    width: 1680px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+.flamingo-rigth{
+    width: 337px;
+}
+
+.agenda-datas{
+    height: 779px;
+    width: 928px;
+}
+
+.a-seguir-frame{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 25px;
+}
+
+.a-seguir-proximo{
+    width: 462px;
+}
+
+.location-1 p{
+    margin-bottom: 5px;
+}
+
+.a-seguir-btn{
+    width: 338px;
+    margin-left: 86.5px;
+}
+
+.data{
+    width: 220px;
+    height: 165px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    margin-bottom: 19px;
+}
+
+.proximas-datas{
+    margin-top: 0px;
+}
+
+.proximas-datas-01{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proximas-datas-02{
+    display: flex;
+    justify-content: space-between;
+}
+
+.proximas-datas p{
+    padding-bottom: 0px;
+    margin-bottom: 23px;
+}
+
+.a-seguir-proximo{
+    width: 462px;
+    width: 470px;
+}
+
+.a-seguir-proximo h2{
+    margin-bottom: 22.41px;
+}
+
+.a-seguir-proximo p{
+    margin-bottom: 5px;
 }
