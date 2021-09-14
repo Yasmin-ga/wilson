@@ -1,0 +1,97 @@
+/*  GERAL  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 900;
+}
+
+button{
+    font-size: 16px;
+    text-transform: none;
+    -webkit-appearance: button;
+    border-style: none;
+}
+
+body{
+    color: #ffff;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #292829 ;
+}
+
+.release{
+    width: 1680px;
+    height: 945px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url(../img/Imagem\ 99.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.realease-frame{
+    height: 690px;
+    width: 692px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 258px;
+}
+
+.realease-frame h1{
+    margin-bottom: 14px;
+}
+
+.realease-frame p{
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.realease-frame > p:nth-child(6) {
+    margin-bottom: 3px;
+    margin-bottom: 40px;
+}
+
+.release-buttons {
+    display: flex;
+    justify-content: space-between;
+    }
+
+button{
+    font-size: 16px;
+    text-transform: none;
+    border-style: none;
+    display: flex;
+    width: 338px;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.btn-1{
+
+    background-color: #292829;
+    color: #FFFFFF;
+}
+
+.btn-2{
+    background-color: #D22B49;
+    color: #FFFFFF;
+}

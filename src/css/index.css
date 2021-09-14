@@ -111,6 +111,18 @@ header{
     font-family: 'Fira Sans', sans-serif;
 }
 
+.spotify-btn:hover{
+    color: #ffff;
+    background-color: #00dc5b;
+}
+
+.apple-music-btn:hover{
+    color: #ffff;
+    background: rgb(255,99,160);
+    background: linear-gradient(180deg, rgba(255,99,160,1) -30%, rgba(255,0,78,1) 71%);
+}
+
+
 .frame-ouca-agora-btns span{
     margin-right: 10px;
 }
@@ -193,6 +205,11 @@ header{
     color: #ffff;
 }
 
+.confira-agenda-btn:hover{
+    background-color: #ff004e;
+    color: #ffff;
+}
+
 .proximos-shows-flamingo{
     margin: 0px 95px 10px 0px;
 }
@@ -230,7 +247,7 @@ header{
 
 .player-maior p{
     font-weight: 900;
-    margin: 102px 0px 39px 140px;
+    margin: 102px 0px 39px 0px;
     }
 
 .players-menores {
@@ -244,8 +261,13 @@ header{
     height: 65px;
     font-size: 16px;
     color: #ffff;
-    background-color: #C29B31;
+    background-color: #ff004e;
     font-family: 'Fira Sans', sans-serif;
+}
+
+.veja-mais-btn:hover{
+    background-color: #C29B31;
+    color: #ffff;
 }
 
 /* banner 04 - CONTATO */
@@ -288,6 +310,11 @@ header{
     color: #ffff;
     background-color: #282829;
     font-family: 'Fira Sans', sans-serif;
+}
+
+.form-btn:hover{
+    color: #ffff;
+    background-color: #C29B31;
 }
 
 /* FOOTER */
