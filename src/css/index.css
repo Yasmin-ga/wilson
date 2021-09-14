@@ -8,6 +8,12 @@
     list-style: none;
 }
 
+.max-container{
+    width: calc(84vw);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 p{
     font-size: 56px;
 }
@@ -30,12 +36,11 @@ body{
 header{
     background: #000000;
     background: linear-gradient(180deg, #000000 -30%, #00000000 60%);
+    position: absolute;
+    width: 100%;
 }
 
 .navbar{
-    width: 1680px;
-    max-width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -322,42 +327,21 @@ header{
 .footer-frame{
     background-color: #292829;
     height: 71px;
-    border: springgreen solid 2px;
-    width: 1680px;
-    max-width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-between;
 }
 
 footer{
-    border: rgb(255, 0, 0) solid 2px;
     height: 71px;
-}
-
-.tel{
-    width: 121px;
-    height: 17px;
+    position: relative;
 }
 
 .tel a{
     font-size: 12px;
     text-decoration: none;
     color: #ffff;
-}
-
-.tel img{
-    margin: 0px 6px;
-    }
-
-.email{
-    width: 229px;
-    height: 17px;
-}
-
-.email img{
-    margin: 0px 6px;
 }
 
 .email a{
@@ -392,14 +376,34 @@ footer{
     margin: 0px 0px 0px 16px;
 }
 
-.footer-contatos{
+.footer-contato{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    gap: 30px;
+}
+
+.footer-contato>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-frame .line {
+    border-right: 1px solid white;
+    height: 42px;
+}
+
+.footer-frame > .copyrigth-container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
 }
 
 .footer-gaita{
-    width: 1680px;
-    max-width: 100%;
-    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: -75px;
 }

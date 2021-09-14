@@ -91,7 +91,15 @@ button{
     color: #FFFFFF;
 }
 
-.btn-2{
+.btn-1:hover{
     background-color: #D22B49;
+}
+
+.btn-2{
+    background-color: #292829;
     color: #FFFFFF;
+}
+
+.btn-2:hover{
+    background-color: #D22B49;
 }

@@ -25,6 +25,11 @@ button{
     color: #FFFFFF;
 }
 
+.quero-ir-btn:hover{
+    background-color: #F26B35;
+    color: #FFFFFF;
+}
+
 body{
     color: #000000;
     font-family: 'Fira Sans', sans-serif;
