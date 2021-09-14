@@ -302,7 +302,35 @@ header{
     height: 724px;
     width: 574px;
     margin: 0px 0px 0px 140px;
+    gap: 38px;
 }
+
+.contato-form form select, .contato-form form input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: unset;
+    border: unset;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    outline: unset;
+}
+
+.contato-form form input::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+.contato-form form input:focus::placeholder{
+ opacity: 0;
+ outline: unset;
+}
+
+
 
 .contato-form form button{
     margin-top: 71px;
