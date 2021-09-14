@@ -1,0 +1,53 @@
+<head>
+    <style>               
+        .seletor{
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .seletor::after{
+            content: "v";
+        }
+
+        .select-menu.active .seletor::after{
+            transform: rotate(180deg);
+        }
+
+        .opcoes{
+            display: none;
+        }
+
+        .select-menu.active .opcoes{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="select-menu">
+        <p class="seletor">Selecione</p>
+        <div class="opcoes">
+            <p>opção 1</p>
+            <p>opção 2 </p>
+        </div>
+    </div>
+
+    <div class="select-menu">
+        <p class="seletor">Selecione</p>
+        <div class="opcoes">
+            <p>opção 1</p>
+            <p>opção 2 </p>
+        </div>
+    </div>
+
+<script>
+   const seletores = document.querySelectorAll(".select-menu .seletor");
+    seletores.forEach(seletor =>{
+        seletor.addEventListener('click', () =>{
+            seletor.parentElement.classList.toggle("active")
+        })
+    })
+</script>
+</body>
+
