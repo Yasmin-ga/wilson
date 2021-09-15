@@ -44,7 +44,7 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 148px;
 }
 
@@ -52,17 +52,51 @@ header{
     display: flex;
 }
 
-.icons li{
-    padding: 20px;
-}
-
-.links li{
-    padding: 11.5px;
-}
-
 .links li a{
     text-decoration: none;
     color: #ffff;
+    font-size: 14px;
+}
+
+.links {
+    gap: 22px;
+}
+
+.links li a:hover{
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+.icons {
+    gap: 46px;
+}
+
+.nav-spotify:hover{
+    fill: #47D760;
+}
+
+.nav-deezer:hover{
+    fill: #EBDD8E;
+}
+
+.nav-apple-music:hover{
+    fill: #EE595B;
+}
+
+.nav-youtube:hover{
+    fill: #F61900;
+}
+
+.nav-facebook:hover{
+    fill: #0E6BE3;
+}
+
+.nav-instagram:hover{
+    fill: #0E6BE3;
+}
+
+.nav-twitter:hover{
+    fill: #2AA0F2;
 }
 
 /* banner 01 - OUÇA AGORA */
@@ -84,6 +118,9 @@ header{
 
 .frame-ouca-agora{
     height: 944px;
+    width: calc(84vw);
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -115,13 +152,13 @@ header{
 
 .spotify-btn:hover{
     color: #ffff;
-    background-color: #00dc5b;
+    background-color: #47D760;
 }
 
 .apple-music-btn:hover{
     color: #ffff;
-    background: rgb(255,99,160);
-    background: linear-gradient(180deg, rgba(255,99,160,1) -30%, rgba(255,0,78,1) 71%);
+    background: transparent linear-gradient(180deg, #F05C5C 0%, #C90441 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
 }
 
 
@@ -139,7 +176,7 @@ header{
 
 .container-ouca-agora{
     display: flex;
-    padding: 0px 130px 100px 0px;
+    margin-bottom: 99px;
 }
 
 /* banner 02 - PRÓXIMOS SHOWS */
@@ -153,24 +190,25 @@ header{
     color: #F26B35;
 }
 
+.proximos-shows-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .proximos-shows-frame{
-    width: 1680px;
-    height: 944px;
-    max-width: 100%;
+    width: calc(84vw);
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-}
-
-.proximos-shows-gaita{
-    padding: 39px 0px 0px 131px;
 }
 
 .proximos-shows-datas {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 57px 0px 137px 258px ;
+    margin: 57px 0px 137px 0px ;
 }
 
 .proximos-shows-datas h1{
@@ -202,24 +240,25 @@ header{
     margin-top: 40px;
 }
 
+.proximos-shows-gaita img{
+    margin-top: 39px;
+    }
+
 .proximos-shows-datas button a{
     text-decoration: none;
     color: #ffff;
 }
 
 .confira-agenda-btn:hover{
-    background-color: #ff004e;
+    background-color: #D22B49;
     color: #ffff;
-}
-
-.proximos-shows-flamingo{
-    margin: 0px 95px 10px 0px;
 }
 
 .proximos-shows-container-2 {
     display: flex;
     align-items: flex-end;
 }
+
 
 /* banner 03 - PLAYER */
 
@@ -263,7 +302,7 @@ header{
     height: 65px;
     font-size: 16px;
     color: #ffff;
-    background-color: #ff004e;
+    background-color: #D22B49;
     font-family: 'Fira Sans', sans-serif;
 }
 
