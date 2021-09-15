@@ -8,6 +8,82 @@
     list-style: none;
 }
 
+.max-container{
+    width: calc(84vw);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/*  header e barra de navegação  */
+
+header{
+    background: #000000;
+    background: linear-gradient(180deg, #000000 -30%, #00000000 60%);
+    position: absolute;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 148px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.links li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 14px;
+}
+
+.links {
+    gap: 22px;
+}
+
+.links li a:hover{
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+.icons {
+    gap: 46px;
+}
+
+.nav-spotify:hover{
+    fill: #47D760;
+}
+
+.nav-deezer:hover{
+    fill: #EBDD8E;
+}
+
+.nav-apple-music:hover{
+    fill: #EE595B;
+}
+
+.nav-youtube:hover{
+    fill: #F61900;
+}
+
+.nav-facebook:hover{
+    fill: #0E6BE3;
+}
+
+.nav-instagram:hover{
+    fill: #0E6BE3;
+}
+
+.nav-twitter:hover{
+    fill: #2AA0F2;
+}
+
+/**/
+
 a{
     text-decoration: none;
 }
@@ -102,4 +178,90 @@ button{
 
 .btn-2:hover{
     background-color: #D22B49;
+}
+
+/* FOOTER */
+
+.footer-frame{
+    background-color: #292829;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+footer{
+    height: 71px;
+    position: relative;
+}
+
+.tel a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.email a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffff;
+}
+
+.copyright{
+    width: 195px;
+    height: 32px;
+}
+
+.copyright p{
+    font-size: 12px;
+    color: #ffff;
+}
+
+.vinci{
+    width: 196px;
+    height: 32.83px;
+    display: flex;
+    align-items: center;
+}
+
+.vinci p{
+    font-size: 12px;
+    color: #ffff;
+}
+
+.vinci img{
+    margin: 0px 0px 0px 16px;
+}
+
+.footer-contato{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-contato>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-frame .line {
+    border-right: 1px solid white;
+    height: 42px;
+}
+
+.footer-frame > .copyrigth-container{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.footer-gaita{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: -75px;
 }
