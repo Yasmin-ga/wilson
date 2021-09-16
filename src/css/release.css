@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-width: 100%;
     list-style: none;
 }
 
@@ -107,7 +106,6 @@ body{
 }
 
 .release{
-    width: 1680px;
     height: 945px;
     max-width: 100%;
     margin: 0 auto;
@@ -121,7 +119,7 @@ body{
 
 .realease-frame{
     height: 690px;
-    width: 692px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,9 +257,55 @@ footer{
 }
 
 .footer-gaita{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    top: -75px;
+    position: relative;
+    top: -53px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto 0 auto;
+}
+
+
+
+@media (max-width: 414px){
+
+    .release {
+        border: blue;
+        justify-content: center;
+        height: 1291px;
+        width: 100%;
+        }
+
+    .realease-frame {
+        margin-left: 0px;
+        height: 690px;
+        width: 692px;
+        height: 885px;
+        width: 376px;
+        line-height: 21px;
+        }
+
+    .release-buttons {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+        }
+
+    .realease-frame > h1{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 36px;
+        font-size: 33px;
+        }
+
+    /* FOOTER */
+
+    div .line{
+        display: none;
+    }
+    
+
+        
 }
