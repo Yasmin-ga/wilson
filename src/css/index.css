@@ -14,9 +14,13 @@
     margin: 0 auto;
 }
 
-p{
-    font-size: 56px;
+.hidden{
+    display: none;
 }
+
+/* p{
+    font-size: 56px;
+} */
 
 button{
     font-size: 16px;
@@ -320,8 +324,9 @@ header{
 
 }
 
-.contato-frame p{
+.contato-frame h2{
     margin: 102px 0px 39px 140px;
+    font-size: 56px;
 }
 
 .contato-frame{
@@ -343,7 +348,7 @@ header{
     gap: 38px;
 }
 
-.contato-form form select, .contato-form form input{
+.contato-form form select, .contato-form form input, .contato-form form textarea{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -358,12 +363,12 @@ header{
     outline: unset;
 }
 
-.contato-form form input::placeholder{
+.contato-form form input::placeholder, .contato-form form textarea::placeholder{
     color: white;
     opacity: 1;
 }
 
-.contato-form form input:focus::placeholder{
+.contato-form form input:focus::placeholder, .contato-form form input:focus::placeholder{
  opacity: 0;
  outline: unset;
 }
@@ -383,6 +388,52 @@ header{
 .form-btn:hover{
     color: #ffff;
     background-color: #C29B31;
+}
+
+.select-menu{
+    border-bottom: 1px solid white;
+}
+
+.seletor{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.seletor-seta{
+    position: absolute;
+    top: -22px;
+    right: 17px;
+    transform: rotate(180deg);
+}
+
+.select-menu.active .seletor-seta{
+    transform: rotate(0deg);
+}
+
+.opcoes{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.opcoes p{
+    cursor: pointer;
+}
+
+.select-menu.active .opcoes{
+    display: flex;
 }
 
 /* FOOTER */
@@ -470,3 +521,5 @@ footer{
     justify-content: center;
     top: -75px;
 }
+
+
