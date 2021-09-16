@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap" rel="stylesheet">
     <title>home-wilson-sideral</title>
 </head>
@@ -127,13 +128,67 @@
 
         <section class="contato">
             <div class="contato-frame">
-                <P>CONTATO</P>
+                <h2>CONTATO</h2>
                 <div class="contato-form">
                     <form action="#" method="POST">
+<<<<<<< HEAD
+=======
+                        <div class="select-menu">
+                            <p class="seletor">
+                                quero contratar 
+                                <span class="seletor-seta">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="14px"
+                                        height="12px" version="1.1"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        viewBox="0 0 0.44 0.38" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <style type="text/css">
+                                                .fil0 {
+                                                    fill: white
+                                                }
+                                            </style>
+                                        </defs>
+                                            <polygon class="fil0" points="0.22,0 0.33,0.19 0.44,0.38 0.22,0.38 0,0.38 0.11,0.19 " />
+                                    </svg>
+                                </span>
+                            </p>
+                            <div class="opcoes">
+                                <p>opção 1</p>
+                                <p>opção 2 </p>
+                            </div>
+                        </div>
+
+                        <div class="select-menu pessoa">
+                            <div class="seletor">
+                                <p>Pessoa Física</p> 
+                                <span class="seletor-seta">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="14px"
+                                        height="12px" version="1.1"
+                                        style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+                                        viewBox="0 0 0.44 0.38" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <style type="text/css">
+                                                .fil0 {
+                                                    fill: white
+                                                }
+                                            </style>
+                                        </defs>
+                                            <polygon class="fil0" points="0.22,0 0.33,0.19 0.44,0.38 0.22,0.38 0,0.38 0.11,0.19 " />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="opcoes">
+                                <p>Pessoa Física</p>
+                                <p>Pessoa Jurídica</p>
+                            </div>
+                        </div>
+
+>>>>>>> 6b6898544abb6798a14a3922321a2893a64d6c49
                         <input type="text" name="nome" id="nome" placeholder="NOME">
                         <input type="email" name="email" id="email" placeholder="EMAIL">
                         <input type="tel" name="telefone" id="telefone" placeholder="TELEFONE">
                         <input type="text" name="cidade" id="cidade" placeholder="CIDADE">
+<<<<<<< HEAD
                         <select name="contratar">
                             <option value="valor1" selected>CONTRATAR</option>
                             <option value="valor2">Valor 1</option>
@@ -174,6 +229,52 @@
                             <option value="TO">Tocantins</option>
                             <option value="EX">Estrangeiro</option>
                         </select>
+=======
+                        <textarea name="mensagem" id="mensagem" placeholder="MENSAGEM"></textarea>
+
+                        <div class="hidden select-container">
+                            <select name="contratar">
+                                <option value="valor1" selected>CONTRATAR</option>
+                                <option value="valor2">Valor 1</option>
+                                <option value="valor3">Valor 3</option>
+                            </select>
+                            <select name="pessoa" id"pessoa">
+                                <option value="fisica" selected>PESSOA FÍSICA</option>
+                                <option value="juridica">PESSOA JURÍDICA</option>
+                            </select>
+                            <select id="ESTADO" name="estado">
+                                <!-- <option selected disabled>ESTADO</option> -->
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                                <option value="EX">Estrangeiro</option>
+                        </select>
+                    </div>
+>>>>>>> 6b6898544abb6798a14a3922321a2893a64d6c49
                         <button class="form-btn">ENVIAR</button>
                     </form>
                 </div>
@@ -184,19 +285,21 @@
     <footer>
         <section class="footer-frame max-container">
             <div class="footer-contato">
-                <img src="./src/img/gaita tropical blues.png" alt="gaita">
                 <div class="tel">
                     <img src="./src/svg/Icon awesome-phone-alt.svg" alt="telefone">
                     <a href="tel:+4733378901">(31) 9 9999-9999</a>
                 </div>
-
+                
                 <div class="line"></div>
-
+                
                 <div class="email">
                     <img src="./src/svg/Icon ionic-ios-mail.svg" alt="email">
                     <a href="mailto:atendimento@wilsonsideral.com.br">atendimento@wilsonsideral.com.br</a>
                 </div>
             </div>
+            <div class="footer-gaita">
+                <img src="./src/img/gaita tropical blues.png" alt="gaita">
+            </div> 
             <div class="copyrigth-container">
                 <div class="copyright">
                     <p>Copyright © 2021 WILSON SIDERAL. Todos os direitos reservados.</p>
@@ -208,6 +311,7 @@
             </div>
         </section>
     </footer>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
