@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wilson Sideral">
-    <link rel="stylesheet" href="./src/css/agenda.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./src/css/geral.css">
+    <link rel="stylesheet" href="./src/css/agenda.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap" rel="stylesheet">
     <title>agenda-wilson-sideral</title>
 </head>
+
 <body>
     <header class="contaienr-nav">
         <nav class="navbar max-container">
@@ -40,25 +42,38 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="agenda">
-            <div class="agenda-frame">
-                <img class="flamingo-esqueda" src="./src/img/fla 1 tropical blues.png" alt="flamingo" width="337px" height="337px">
+            <div class="agenda-frame  max-container">
                 <div class="agenda-datas">
+                    <img class="flamingo-esqueda" src="./src/img/fla 1 tropical blues.png" alt="flamingo" width="337px" height="337px">
                     <div class="a-seguir-frame">
                         <div class="a-seguir-proximo">
                             <p class="title">A SEGUIR:</p>
                             <h2>11/SET - RIO</h2>
-                            <P class="location-1">RIO DE JANEIRO - RJ - JEUNESSE ARENA</P>
-                            <P class="location-2">AVENIDA EMBAIXADOR ABELARDO BUENO, 3401 - BARRA DA TIJUCA</P>
+                            <div class="location">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 0 24 24" width="28px"
+                                    fill="#000000">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                    </svg>
+                                <div class="location-text">
+                                    <P class="location-1">RIO DE JANEIRO - RJ - JEUNESSE ARENA</P>
+                                    <P class="location-2">AVENIDA EMBAIXADOR ABELARDO BUENO, 3401 - BARRA DA TIJUCA</P>
+                                </div>
+                            </div>
                         </div>
                         <div class="a-seguir-btn">
-                            <a href="#"></a><button class="quero-ir-btn">EU QUERO IR</button></a>
+                            <a href="#">
+                                <button class="quero-ir-btn">EU QUERO IR</button>
+                            </a>
                         </div>
                     </div>
                     <div class="proximas-datas">
                         <P class="title">PRÓXIMOS SHOWS:</P>
-                        <div class="proximas-datas-01">
+                        <div class="proximas-datas-grid">
                             <div class="data">
                                 <h3>12/SET</h3>
                                 <h4>SÃO PAULO</h4>
@@ -75,8 +90,6 @@
                                 <h3>01/OUT</h3>
                                 <h4>CURITIBA</h4>
                             </div>
-                        </div>
-                        <div class="proximas-datas-02">
                             <div class="data">
                                 <h3>09/OUT</h3>
                                 <h4>CURITIBA</h4>
@@ -95,16 +108,13 @@
                             </div>
                         </div>
                     </div>
+                    <img class="flamingo-direita" src="./src/img/fla 2 tropical blues.png" alt="flamingo" width="270px" height="340px">
                 </div>
-                <img class="flamingo-direita" src="./src/img/fla 2 tropical blues.png" alt="flamingo" width="270px" height="340px">
             </div>
-                
         </section>
     </main>
+
     <footer>
-        <div class="footer-gaita">
-            <img src="./src/img/gaita tropical blues.png" alt="gaita">
-        </div>
         <section class="footer-frame max-container">
             <div class="footer-contato">
                 <div class="tel">
@@ -116,6 +126,9 @@
                     <img src="./src/svg/Icon ionic-ios-mail.svg" alt="email">
                     <a href="mailto:atendimento@wilsonsideral.com.br">atendimento@wilsonsideral.com.br</a>
                 </div>
+            </div>
+            <div class="footer-gaita">
+                <img src="./src/img/gaita tropical blues.png" alt="gaita">
             </div>
             <div class="copyrigth-container">
                 <div class="copyright">

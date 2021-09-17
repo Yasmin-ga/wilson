@@ -1,3 +1,17 @@
+//video
+
+
+
+
+
+
+
+
+
+
+
+
+//form
 const seletores = document.querySelectorAll(".select-menu .seletor");
 seletores.forEach(seletor =>{
     seletor.addEventListener('click', () =>{

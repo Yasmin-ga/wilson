@@ -111,6 +111,7 @@ header{
     background-position: center;
     max-width: 100%;
     height: 944px;
+    padding-top: 148px;
 }
 
 .ouca-agora p{
@@ -120,13 +121,11 @@ header{
 }
 
 .frame-ouca-agora{
-    height: 944px;
-    width: calc(84vw);
-    max-width: 1400px;
-    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    height: 100%;
+    padding-bottom: 100px;
 }
 
 .frame-ouca-agora-itens{
@@ -182,7 +181,6 @@ header{
 
 .container-ouca-agora{
     display: flex;
-    margin-bottom: 99px;
 }
 
 /* banner 02 - PRÓXIMOS SHOWS */
@@ -301,11 +299,18 @@ header{
     margin: 102px 0px 39px 0px;
     }
 
+.iframe-wrapper iframe{
+    width: 100%;
+    height: 456px;
+}
+
 .players-menores {
     display: flex;
     justify-content: space-between;
     margin: 18px 0px 18px 0px;
-    }
+}
+
+
 
 .player-container a button{
     width: 810px;
