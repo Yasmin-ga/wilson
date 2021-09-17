@@ -122,8 +122,9 @@ body{
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 258px;
+    margin-left: 0px;
+    width: 692px;
+    justify-content: flex-end;
 }
 
 .realease-frame h1{
