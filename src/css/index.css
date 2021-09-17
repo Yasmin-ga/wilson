@@ -164,6 +164,9 @@ header{
     opacity: 1;
 }
 
+.frame-ouca-agora-itens > h2 {
+    font-size: 56px;
+}
 
 .frame-ouca-agora-btns span{
     margin-right: 10px;
@@ -283,6 +286,10 @@ header{
     justify-content: center;
     margin: 0px 0px 102px 48px;
     margin-right: 140px;
+}
+
+.player-maior > h2{
+    font-size: 56px;
 }
 
 .player-flamingo img{
@@ -515,11 +522,12 @@ footer{
 }
 
 .footer-gaita{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    top: -75px;
+    position: relative;
+    top: -53px;
+    left: 90px;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto 0 auto;
 }
 
 
