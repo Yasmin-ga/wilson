@@ -21,7 +21,7 @@ button{
     -webkit-appearance: button;
     border-style: none;
     display: flex;
-    width: 338px;
+    width: 100%;
     height: 65px;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,11 @@ h2{
     font-weight: 900;
     color: #D22B49;
 }
+@media (max-width:768px) {
+    h2{
+        font-size: 60px;
+    }
+}
 
 
 h3{
@@ -61,6 +66,16 @@ h4{
     color: #292829;
 }
 
+@media (max-width:768px) {
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 10px;
+    }
+}
+
+
 .location-1{
     font-size: 16px;
     font-weight: 900;
@@ -74,28 +89,60 @@ h4{
     color: #292829;
 }
 
+@media (max-width:768px) {
+    .location-1{
+        font-size: 14px;
+    }
+    
+    .location-2{
+        font-size: 10px;
+    }
+}
+
 .title{
     font-size: 50px;
     font-weight: 300;
     color: #555234;
 }
+
+@media (max-width:768px) {
+    .title{
+        font-size: 33px;
+    }    
+    .proximas-datas .title{
+        padding-left: 18px;
+        margin-bottom: 8px;
+
+    }    
+}
+
 /* section - AGENDA */
 
 .agenda{
     background-image: url(../img/Imagem\ 97.png);
     padding-top: 148px;
-    padding-bottom: 38px;
+    padding-bottom: 105px;
+    margin-top: -148px;
+    overflow: hidden;
 }
+@media (max-width:768px) {  
+    .agenda{
+        padding-bottom: 120px;
+    }
+}
+
 
 .agenda-frame{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    padding-top: 25px;
 }
 
 .agenda-datas{
-    height: 779px;
-    width: 928px;
+   /*  height: 779px; */
+    width: 100%;
+    max-width: 928px;
     position: relative;
 }
 
@@ -106,10 +153,28 @@ h4{
     margin-bottom: 54px;
 }
 
+@media (max-width:768px) {
+    .a-seguir-frame{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 45px;
+        margin-bottom: 58px;
+    }    
+}
+
+
 .location{
     display: flex;
     align-items: center;
+    justify-content: stretch;
     gap: 12px;
+}
+
+@media (max-width:768px) {
+    .location{
+        gap: 9px;
+    }
 }
 
 .location-1 p{
@@ -117,23 +182,29 @@ h4{
 }
 
 .a-seguir-btn{
-    width: 338px;
+    width: 100%;
+    max-width: 338px;
 }
 
 .data{
-    width: 220px;
     height: 165px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 3px solid transparent;
 
+}
+@media (max-width:768px) {
+    .data{
+        height: 67px;
+    }
 }
 
 .data:hover{
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border: 3px solid #D22B49;
+    border-color: #D22B49;
     opacity: 1;
 }
 
@@ -142,6 +213,20 @@ h4{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
+}
+
+@media (max-width:768px) {
+    .proximas-datas{
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .proximas-datas-grid{
+        gap: 8px;
+        padding: 0 10px;
+        max-width: 520px;
+        margin: 0 auto;
+    }
 }
 
 .proximas-datas p{
@@ -166,10 +251,22 @@ h4{
 
 .flamingo-direita {
     right: var(--offset)
-    }
+}
 
 .flamingo-esqueda {
     left: calc(var(--offset) - 68px);
+}
+
+@media (max-width: 768px){
+    [class*="flamingo-"]{
+        --offset: 0px;
+        bottom: -121px;
+        height: 100px;
+        width: auto;
+    }
+    
+    .flamingo-esqueda {
+        left: calc(var(--offset) - 0px);
     }
 
-/* FOOTER */
+}

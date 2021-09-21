@@ -11,13 +11,37 @@ $(document).ready(()=>{
         `,
         responsive: [
             {
-              breakpoint: 1440,
+              breakpoint: 1280,
               settings: {
                 slidesToShow: 5,
               }
             },
             {
-              breakpoint: 1260,
+              breakpoint: 1150,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 890,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 6,
+              }
+            },
+            {
+              breakpoint: 670,
+              settings: {
+                slidesToShow: 5,
+              }
+            },
+            {
+              breakpoint: 590,
               settings: {
                 slidesToShow: 4,
               }

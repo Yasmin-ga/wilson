@@ -201,9 +201,6 @@ header{
 }
 
 .proximos-shows-frame{
-    width: calc(84vw);
-    max-width: 1400px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -288,6 +285,8 @@ header{
 
 .player-maior > h2{
     font-size: 56px;
+    margin-bottom: 19px;
+    margin-top: 81px;
 }
 
 .player-flamingo img{
@@ -298,6 +297,10 @@ header{
     font-weight: 900;
     margin: 102px 0px 39px 0px;
     }
+
+.iframe-wrapper{
+    width: 100%;
+}
 
 .iframe-wrapper iframe{
     width: 100%;

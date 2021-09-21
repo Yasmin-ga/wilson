@@ -24,17 +24,18 @@ body{
 }
 
 .release{
-    padding-top: 150px;
+    padding-top: 148px;
     min-height: 945px;
     max-width: 100%;
     margin: 0 auto;
+    margin-top: -148px;
     background-image: url(../img/Imagem\ 99.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1680px;
 }
 
-.realease-frame{
+.release-frame{
     padding-left: 127px;
     width: 819px;
     max-width: 100%;
@@ -42,18 +43,26 @@ body{
     flex-direction: column;
     justify-content: flex-end;
 }
+  
+@media (max-width: 1100px) {
+    .release-frame{
+        padding: unset;    
+        margin: auto;
+        width: 692px;
+    }
+}
 
-.realease-frame h1{
+.release-frame h1{
     margin-bottom: 14px;
 }
 
-.realease-frame p{
+.release-frame p{
     font-size: 16px;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
-.realease-frame > p:nth-child(6) {
+.release-frame > p:nth-child(6) {
     margin-bottom: 3px;
     margin-bottom: 40px;
 }
@@ -75,6 +84,7 @@ button{
     align-items: center;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
 }
 
 .btn-1{
@@ -100,20 +110,17 @@ button{
 
 
 
-@media (max-width: 480px){
+@media (max-width: 768px){
 
     .release {
         justify-content: center;
-        height: 1291px;
+        height: auto;
         width: 100%;
+        padding-bottom: 50px;
+        background-position: top 30px right -400px;
+        background-size: 1920px;
         }
 
-    .realease-frame {
-        margin-left: 0px;
-        width: 376px;
-        line-height: 21px;
-        height: 1150px;
-        }
 
     .release-buttons {
         justify-content: space-between;
@@ -122,7 +129,7 @@ button{
         gap: 14px;
         }
 
-    .realease-frame > h1{
+    .release-frame > h1{
         align-items: center;
         display: flex;
         justify-content: center;
@@ -130,9 +137,9 @@ button{
         font-size: 33px;
     }
 
-    .realease-frame p {
+    .release-frame p {
         font-size: 18px;
-    }
+    } 
 
     /* FOOTER */
   
