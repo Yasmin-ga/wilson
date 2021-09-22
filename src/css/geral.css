@@ -1,5 +1,9 @@
 /* Reset e Geral */
 
+:root{
+    --header-height: 148px
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -28,7 +32,7 @@ header{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    height: 148px;
+    height: var(--header-height);
     gap: 25px;
     width: 95vw;
 }
@@ -279,7 +283,7 @@ footer{
 
 .footer-gaita{
     position: relative;
-    top: -53px;
+    top: -40px;
 }
 
 

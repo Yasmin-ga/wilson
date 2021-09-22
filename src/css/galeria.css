@@ -8,9 +8,9 @@ body{
 }
 
 main{
-    padding-top: 148px;
-    margin-top: -148px;
     padding-bottom: 140px;
+    padding-top: var(--header-height);
+    margin-top: calc(0px - var(--header-height));
 }
 @media (max-width:768px) {
     main{

@@ -24,15 +24,15 @@ body{
 }
 
 .release{
-    padding-top: 148px;
     min-height: 945px;
     max-width: 100%;
     margin: 0 auto;
-    margin-top: -148px;
     background-image: url(../img/Imagem\ 99.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1680px;
+    padding-top: var(--header-height);
+    margin-top: calc(0px - var(--header-height));
 }
 
 .release-frame{

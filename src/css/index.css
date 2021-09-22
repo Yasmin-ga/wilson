@@ -8,12 +8,6 @@
     list-style: none;
 }
 
-.max-container{
-    width: calc(84vw);
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
 .hidden{
     display: none;
 }
@@ -35,73 +29,6 @@ body{
     font-family: 'Fira Sans', sans-serif;
 }
 
-/*  header e barra de navegação  */
-
-header{
-    background: #000000;
-    background: linear-gradient(180deg, #000000 -30%, #00000000 60%);
-    position: absolute;
-    width: 100%;
-}
-
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 148px;
-}
-
-.navbar ul{
-    display: flex;
-}
-
-.links li a{
-    text-decoration: none;
-    color: #ffff;
-    font-size: 14px;
-}
-
-.links {
-    gap: 22px;
-}
-
-.links li a:hover{
-    color: #FFFFFF;
-    opacity: 60%;
-}
-
-.icons {
-    gap: 46px;
-}
-
-.nav-spotify:hover{
-    fill: #47D760;
-}
-
-.nav-deezer:hover{
-    fill: #EBDD8E;
-}
-
-.nav-apple-music:hover{
-    fill: #EE595B;
-}
-
-.nav-youtube:hover{
-    fill: #F61900;
-}
-
-.nav-facebook:hover{
-    fill: #0E6BE3;
-}
-
-.nav-instagram:hover{
-    fill: #0E6BE3;
-}
-
-.nav-twitter:hover{
-    fill: #2AA0F2;
-}
-
 /* banner 01 - OUÇA AGORA */
 
 .ouca-agora{
@@ -111,7 +38,13 @@ header{
     background-position: center;
     max-width: 100%;
     height: 944px;
-    padding-top: 148px;
+    padding-top: var(--header-height);
+    margin-top: calc(0px - var(--header-height));
+}
+@media (max-width:1200px) {
+    .ouca-agora{
+        background-position: left -100px top 0px;    
+    }
 }
 
 .ouca-agora p{
@@ -183,6 +116,42 @@ header{
     display: flex;
 }
 
+@media (max-width:768px) {
+    .ouca-agora{
+        height: 736px;    
+    }
+
+    .frame-ouca-agora-itens > h2 {
+        font-size: 33px;
+    }
+
+    .frame-ouca-agora-btns button {
+        width: 98px;
+        height: 25px;
+        font-size: 10px;
+        }
+
+    .frame-ouca-agora-btns img {
+        margin-right: 5px;
+        height: 14px;
+        width: 12px;
+    }
+
+    #capa-album-header{
+        width: 134px;
+        height: 134px;
+    }
+
+    .frame-ouca-agora-btns {
+        padding-top: 22px;
+    }
+
+    .frame-ouca-agora-itens {
+        padding-left: 23px;
+        padding-top: 14px;
+    }
+}
+
 /* banner 02 - PRÓXIMOS SHOWS */
 
 .proximos-shows{
@@ -198,11 +167,13 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    flex-shrink: 0;
 }
 
 .proximos-shows-frame{
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .proximos-shows-datas {
@@ -268,9 +239,7 @@ header{
 }
 
 .player-frame{
-    width: 1680px;
     height: 944px;
-    max-width: 100%;
     margin: 0 auto;
     display: flex;
 }
@@ -280,7 +249,7 @@ header{
     flex-direction: column;
     justify-content: center;
     margin: 0px 0px 102px 48px;
-    margin-right: 140px;
+    margin-right: 15px;
 }
 
 .player-maior > h2{
@@ -289,8 +258,15 @@ header{
     margin-top: 81px;
 }
 
+
+.player-flamingo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .player-flamingo img{
-    margin-top: 161px;
+
 }
 
 .player-maior p{
@@ -310,7 +286,8 @@ header{
 .players-menores {
     display: flex;
     justify-content: space-between;
-    margin: 18px 0px 18px 0px;
+    margin: 18px 0px;
+    gap: 10px;
 }
 
 
@@ -322,6 +299,7 @@ header{
     color: #ffff;
     background-color: #D22B49;
     font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
 }
 
 .veja-mais-btn:hover{
@@ -335,8 +313,23 @@ header{
     background-image: url(../img/Imagem\ 79.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position:center;
+    padding-bottom: 97px;
+}
+@media(min-width:1920px){
+    .contato{
+        background-position: top -10vw center;
+    }
+}
+@media (max-width:1200px){
+    .contato{    
+        background-position: top 0 right 0;
+    }
+}
+@media (max-width:768px){
+    .contato{    
+        background-position: top 0 right -300px;
+    }
 }
 
 .contato-frame h2{
@@ -345,10 +338,7 @@ header{
 }
 
 .contato-frame{
-    width: 1680px;
     height: 944px;
-    max-width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -451,107 +441,19 @@ header{
     display: flex;
 }
 
-/* FOOTER */
-
-.footer-frame{
-    background-color: #292829;
-    height: 71px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-}
-
-footer{
-    height: 71px;
-    position: relative;
-}
-
-.tel a{
-    font-size: 12px;
-    text-decoration: none;
-    color: #ffff;
-}
-
-.email a{
-    font-size: 12px;
-    text-decoration: none;
-    color: #ffff;
-}
-
-.copyright{
-    width: 195px;
-    height: 32px;
-}
-
-.copyright p{
-    font-size: 12px;
-    color: #ffff;
-}
-
-.vinci{
-    width: 196px;
-    height: 32.83px;
-    display: flex;
-    align-items: center;
-}
-
-.vinci p{
-    font-size: 12px;
-    color: #ffff;
-}
-
-.vinci img{
-    margin: 0px 0px 0px 16px;
-}
-
-.footer-contato{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.footer-contato>div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.footer-frame .line {
-    border-right: 1px solid white;
-    height: 42px;
-}
-
-.footer-frame > .copyrigth-container{
-    display: flex;
-    align-items: center;
-    gap: 70px;
-}
-
-.footer-gaita{
-    position: relative;
-    top: -53px;
-    left: 90px;
-    right: 0;
-    bottom: 0;
-    margin: 0 auto 0 auto;
-}
-
 @media(max-width: 1280px){
     .player-frame{
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
-        width: 1680px;
         height: 1280px;
     }
 
     .player-flamingo {
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
     }
+
 
     .player-flamingo > img{
         margin: 0;
@@ -571,14 +473,6 @@ footer{
         justify-content: center;
     }
 
-    .btn-videos{
-        width: 85%;
-    }
-
-    .players-menores {
-        width: 85%;
-        margin: 18px 38px 18px 38px
-    }
 
     .player-maior > iframe {
         width: 85%; 
