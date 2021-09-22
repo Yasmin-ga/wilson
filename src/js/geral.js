@@ -1,5 +1,5 @@
 const menuLines = document.querySelector(".menu-lines");
-const navbar = document.querySelector("nav.navbar")
-menuLines.addEventListener("click",()=>{
-    navbar.classList.toggle("active")
+const header = document.querySelector(".main-header")
+menuLines.addEventListener("click", () => {
+    header.classList.toggle("menu-active")
 })
