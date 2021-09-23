@@ -118,6 +118,7 @@ main{
     height: 22px;
     width: 22px;
     border-radius: 2px;
+    top: calc(50% - 11px);
     }
 }
 

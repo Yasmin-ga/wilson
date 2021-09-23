@@ -1,15 +1,3 @@
-//video
-
-
-
-
-
-
-
-
-
-
-
 
 //form
 const seletores = document.querySelectorAll(".select-menu .seletor");

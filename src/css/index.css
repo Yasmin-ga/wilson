@@ -104,6 +104,10 @@ body{
     margin-right: 10px;
 }
 
+.frame-ouca-agora-btns button{
+    cursor: pointer;
+}
+
 .frame-ouca-agora-btns a{
     text-decoration: none;
 }
@@ -120,10 +124,18 @@ body{
     .ouca-agora{
         height: 736px;    
     }
+    
+    .frame-ouca-agora{
+        padding-bottom: 40px;
+    }
 
     .frame-ouca-agora-itens > h2 {
         font-size: 33px;
     }
+
+   /*  .container-ouca-agora{
+        margin-right: 5%;
+    } */
 
     .frame-ouca-agora-btns button {
         width: 98px;
@@ -147,7 +159,7 @@ body{
     }
 
     .frame-ouca-agora-itens {
-        padding-left: 23px;
+        padding-left: 16px;
         padding-top: 14px;
     }
 }
@@ -161,6 +173,7 @@ body{
     background-position: center;
     background-color: #FAFAFA;
     color: #F26B35;
+    padding-top: 39px;
 }
 
 .proximos-shows-container{
@@ -209,16 +222,18 @@ body{
     height: 65px;
     background-color: #000000;
     font-family: 'Fira Sans', sans-serif;
-    margin-top: 40px;
+    cursor: pointer;
 }
 
-.proximos-shows-gaita img{
+/* .proximos-shows-gaita img{
     margin-top: 39px;
-    }
+    } */
 
-.proximos-shows-datas button a{
+.proximos-shows-datas a{
     text-decoration: none;
     color: #ffff;
+    margin-top: 40px;
+    cursor: pointer;
 }
 
 .confira-agenda-btn:hover{
@@ -231,6 +246,43 @@ body{
     align-items: flex-end;
 }
 
+@media (max-width: 768px){
+    .proximos-shows{
+        padding-top: 20px;
+    }
+
+    .proximos-shows-frame {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .proximos-shows-container{
+        align-items: center;
+    }
+
+    .proximos-shows-gaita{
+        align-self: flex-start;
+    }
+    .proximos-shows-gaita img {
+        width: 114px;
+        height: auto;
+    }
+
+    .proximos-shows-datas{
+        margin-top: 23px;
+        margin-bottom: unset;
+    }
+
+    .proximos-shows-container-2{
+        align-self: flex-end;
+    }
+
+    .proximos-shows-flamingo>img{
+        height: 173px;
+        width: auto;
+    }
+}
+
 
 /* banner 03 - PLAYER */
 
@@ -239,7 +291,6 @@ body{
 }
 
 .player-frame{
-    height: 944px;
     margin: 0 auto;
     display: flex;
 }
@@ -256,6 +307,7 @@ body{
     font-size: 56px;
     margin-bottom: 19px;
     margin-top: 81px;
+    font-weight: 900;
 }
 
 
@@ -265,10 +317,6 @@ body{
     flex-direction: column;
 }
 
-.player-flamingo img{
-
-}
-
 .player-maior p{
     font-weight: 900;
     margin: 102px 0px 39px 0px;
@@ -276,11 +324,12 @@ body{
 
 .iframe-wrapper{
     width: 100%;
+    height: 456px;
 }
 
 .iframe-wrapper iframe{
     width: 100%;
-    height: 456px;
+    height: 100%;
 }
 
 .players-menores {
@@ -289,8 +338,6 @@ body{
     margin: 18px 0px;
     gap: 10px;
 }
-
-
 
 .player-container a button{
     width: 810px;
@@ -307,6 +354,65 @@ body{
     color: #ffff;
 }
 
+
+@media(max-width: 1280px){
+    .player-frame{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        gap: 34px;
+    }
+
+    .player-flamingo {
+        flex-direction: row;
+    }
+
+    .player-flamingo > img{
+        margin: 0;
+        max-width: 50%;
+    }
+
+    .player-maior {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .player-container{
+        margin:0;
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+
+@media (max-width:768px) {
+
+    .player-maior > h2 {
+        font-size: 33px;
+    }
+
+    .iframe-wrapper {
+        height: 48vw;
+
+    }
+
+    .player-container{
+        padding: 0 20px;
+    }
+/* 
+    .player-flamingo > img{
+        width: 230px;
+    }
+ */    
+}
+
+
+
+
 /* banner 04 - CONTATO */
 
 .contato{
@@ -315,8 +421,9 @@ body{
     background-repeat: no-repeat;
     background-position:center;
     padding-bottom: 97px;
+    padding-top: 102px;
 }
-@media(min-width:1920px){
+@media(min-width:2500px){
     .contato{
         background-position: top -10vw center;
     }
@@ -332,25 +439,45 @@ body{
     }
 }
 
-.contato-frame h2{
-    margin: 102px 0px 39px 140px;
-    font-size: 56px;
+.contato-form{
+    width: 574px;
 }
 
-.contato-frame{
-    height: 944px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.contato-form h2{
+    font-size: 56px;
+    margin-left: 118px;
+    margin-bottom: 60px;
 }
 
 .contato-form form{
     display: flex;
     flex-direction: column;
-    height: 724px;
-    width: 574px;
-    margin: 0px 0px 0px 140px;
     gap: 38px;
+}
+
+.form-estado-cidade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.select-wrapper{
+    position: relative;
+}
+
+.select-wrapper::after{
+    content: "";
+    position: absolute;
+    top: -9px;
+    right: 9%;
+    background-image: url("/src/img/seta.svg");
+    background-repeat: no-repeat;
+    padding: 7px;
+    transform: rotate(180deg);
+}
+
+.select-wrapper:focus-within::after{
+    transform: rotate(0deg);
 }
 
 .contato-form form select, .contato-form form input, .contato-form form textarea{
@@ -359,13 +486,18 @@ body{
     appearance: none;
     background: unset;
     border: unset;
-    border-bottom: 1px solid white;
+    outline: unset;
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
     color: white;
+    width: 100%;
+}
+
+.contato-form form select, .contato-form form input, .contato-form form textarea{
     padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 15px;
-    outline: unset;
+    border-bottom: 1px solid white;
 }
 
 .contato-form form input::placeholder, .contato-form form textarea::placeholder{
@@ -373,16 +505,13 @@ body{
     opacity: 1;
 }
 
-.contato-form form input:focus::placeholder, .contato-form form input:focus::placeholder{
+.contato-form form input:focus::placeholder, .contato-form form textarea:focus::placeholder{
  opacity: 0;
  outline: unset;
 }
 
-
-
 .contato-form form button{
     margin-top: 71px;
-    width: 574px;
     height: 65px;
     font-size: 16px;
     color: #ffff;
@@ -394,6 +523,36 @@ body{
     color: #ffff;
     background-color: #C29B31;
 }
+
+@media (max-width:991px) {
+    .contato-frame{
+        display: flex;
+        justify-content: center;
+    }   
+}
+
+@media (max-width:768px){
+    .contato-form{
+        width: 100%;
+        max-width: 340px;
+    }
+    
+    .contato-form form{
+        gap: 30px;
+    } 
+    
+    .form-estado-cidade {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+
+
+
+
 
 .select-menu{
     border-bottom: 1px solid white;
@@ -439,42 +598,4 @@ body{
 
 .select-menu.active .opcoes{
     display: flex;
-}
-
-@media(max-width: 1280px){
-    .player-frame{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-around;
-        align-items: center;
-        height: 1280px;
-    }
-
-    .player-flamingo {
-        flex-direction: row;
-    }
-
-
-    .player-flamingo > img{
-        margin: 0;
-        max-width: 50%;
-    }
-
-    .player-maior {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .player-container{
-        margin:0;
-        display: flex;
-        justify-content: center;
-    }
-
-
-    .player-maior > iframe {
-        width: 85%; 
-    }
 }
