@@ -29,6 +29,7 @@ button{
     font-family: 'Fira Sans', sans-serif;
     background-color: #D22B49;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .quero-ir-btn:hover{
@@ -194,7 +195,7 @@ h4{
     justify-content: center;
     align-items: center;
     border: 3px solid transparent;
-
+    transition: all 0.3s;
 }
 @media (max-width:768px) {
     .data{

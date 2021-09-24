@@ -1,18 +1,13 @@
+function inputHandler(masks, max, event) {
+	var c = event.target;
+	var v = c.value.replace(/\D/g, '');
+	var m = c.value.length > max ? 1 : 0;
+	VMasker(c).unMask();
+	VMasker(c).maskPattern(masks[m]);
+	c.value = VMasker.toPattern(v, masks[m]);
+}
 
-//form
-const seletores = document.querySelectorAll(".select-menu .seletor");
-seletores.forEach(seletor =>{
-    seletor.addEventListener('click', () =>{
-        seletor.parentElement.classList.toggle("active")
-    })
-})
-
-const pessoaOpts = document.querySelectorAll(".select-menu.pessoa .opcoes p");
-pessoaOpts.forEach(opt => {
-    let text = opt.innerText
-    opt.addEventListener("click", () =>{
-        opt.parentElement.parentElement.querySelector(".seletor p").innerText = text;
-        opt.parentElement.parentElement.classList.remove("active");
-    })
-
-})
+var telMask = ['(99) 9999-99999', '(99) 99999-9999'];
+var tel = document.querySelector('input[type="tel"]');
+VMasker(tel).maskPattern(telMask[0]);
+tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false);

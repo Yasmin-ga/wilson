@@ -476,9 +476,9 @@ body{
     transform: rotate(180deg);
 }
 
-.select-wrapper:focus-within::after{
+/* .select-wrapper:focus-within::after{
     transform: rotate(0deg);
-}
+} */
 
 .contato-form form select, .contato-form form input, .contato-form form textarea{
     -webkit-appearance: none;
@@ -510,8 +510,25 @@ body{
  outline: unset;
 }
 
+.contato-form select{
+    cursor: pointer;
+}
+
+.contato-form form select option{
+    color: white;
+    background-color: #de6332;    
+}
+
+.contato-form form select option:disabled{
+    display: none;
+}
+
+.contato-form .textarea-wrapper{
+    min-height: 130px;
+}
+
 .contato-form form button{
-    margin-top: 71px;
+    /* margin-top: 71px; */
     height: 65px;
     font-size: 16px;
     color: #ffff;
@@ -547,55 +564,4 @@ body{
         justify-content: center;
         gap: 30px;
     }
-}
-
-
-
-
-
-
-.select-menu{
-    border-bottom: 1px solid white;
-}
-
-.seletor{
-    display: flex;
-    gap: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Fira Sans', sans-serif;
-    color: white;
-    padding-left: 30px;
-    padding-bottom: 15px;
-    position: relative;
-    text-transform: uppercase;
-}
-
-.seletor-seta{
-    position: absolute;
-    top: -22px;
-    right: 17px;
-    transform: rotate(180deg);
-}
-
-.select-menu.active .seletor-seta{
-    transform: rotate(0deg);
-}
-
-.opcoes{
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 10px;
-    padding-left: 50px;
-    gap: 10px;
-    font-size: 17px;
-}
-
-.opcoes p{
-    cursor: pointer;
-}
-
-.select-menu.active .opcoes{
-    display: flex;
 }
